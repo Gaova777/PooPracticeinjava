@@ -1,20 +1,13 @@
-//import static ui.UIMenu.*;
-import static ui.A_UIMenuConst.*;
+import static ui.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        /*Doctor myDoctor = new Doctor();
-        myDoctor.name = "Alejandro Rodríguez";
-        myDoctor.showName();
-        myDoctor.showId();
+        //showMenu();
 
-
-
-        Doctor myDoctorAnn = new Doctor();
-        myDoctorAnn.showId();*/
-
-        showMenu();
+        Doctor myDoctor = new Doctor("Anahí Salgado", "Pediatria");
+        System.out.println(myDoctor.name);
+        System.out.println(myDoctor.speciality);
 
     }
 
