@@ -79,8 +79,6 @@ public class Patient {
         this.birthday = birthday;
     }
 
-
-
     public String getBlood() {
         return blood;
     }
@@ -88,5 +86,4 @@ public class Patient {
     public void setBlood(String blood) {
         this.blood = blood;
     }
-
 }
