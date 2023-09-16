@@ -7,6 +7,11 @@ public class Nurse extends  User{
         super(name,email);
     }
 
+    @Override
+    public void showData() {
+
+    }
+
     public String getSpeciality() {
         return speciality;
     }

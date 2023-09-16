@@ -53,4 +53,6 @@ public class AppointmentNurse implements ISchedulable {
     public void schedule(Date date, String time) {
 
     }
+
+
 }

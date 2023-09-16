@@ -12,6 +12,11 @@ public class Doctor extends User {
         this.speciality = speciality;
     }
 
+    @Override
+    public void showData() {
+        System.out.println("El nombre del doctor es: "+ getName() + "la especialidad es:" + getSpeciality());
+    }
+
     public String getSpeciality() {
         return speciality;
     }
