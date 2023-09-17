@@ -1,6 +1,4 @@
-import Model.Doctor;
-import Model.Patient;
-import Model.User;
+import Model.*;
 
 import java.util.Date;
 
@@ -18,6 +16,32 @@ public class Main {
 
         User user = new Doctor("Anahi", "ana@ana.com");
         user.showData();
+
+        /*
+        * clases anonimas ->
+        * */
+
+        User user1 = new User("Juan", "Diego@gma.com") {
+            @Override
+            public void showData() {
+                System.out.println("Doctor");
+                System.out.println("\notra cosita");
+            }
+        };
+
+        user1.showData();
+
+        ISchedulable iSchedulable = new ISchedulable() {
+            @Override
+            public void schedule(Date date, String time) {
+
+            }
+        };
+
+        ISchedulable iSchedulable1 = new AppointmentDoctor(){
+
+        };
+
         /*
         System.out.println();
         System.out.println();
